@@ -1,8 +1,5 @@
 FROM tomsquest/docker-radicale:3.5.2.0
 
-ARG COMMIT_ID
-ENV COMMIT_ID=${COMMIT_ID}
-
 ARG BUILD_UID
 ENV BUILD_UID=${BUILD_UID:-1000}
 
@@ -13,10 +10,7 @@ LABEL maintainer="El Che <elche@elches.cloud>" \
     org.label-schema.name="Radicale Docker Image with birthday script" \
     org.label-schema.description="Enhanced Docker image for Radicale, the CalDAV/CardDAV server with capabilities to generate birthday calendar from the address books" \
     org.label-schema.url="https://github.com/gaodes/radicale" \
-    org.label-schema.version=$VERSION \
-    org.label-schema.vcs-ref=$COMMIT_ID \
-    org.label-schema.vcs-url="https://github.com/tomsquest/docker-radicale" \
-    org.label-schema.schema-version="1.0"
+    org.label-schema.vcs-url="https://github.com/tomsquest/docker-radicale"
 
 RUN apk add --no-cache \
         py3-dateutil \
