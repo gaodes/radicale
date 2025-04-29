@@ -3,13 +3,6 @@
   "extends": [
     "config:recommended"
   ],
-  "packageRules": [
-    {
-      "matchDatasources": ["docker"],
-      "automerge": true,
-      "automergeType": "pr"
-    }
-  ],
   "schedule": [
     "at any time"
   ],
