@@ -7,8 +7,7 @@ ARG BUILD_GID
 ENV BUILD_GID=${BUILD_GID:-1000}
 
 LABEL maintainer="El Che <elche@elches.cloud>" \
-    org.label-schema.name="Radicale Docker Image with birthday script" \
-    org.label-schema.description="Enhanced Docker image for Radicale, the CalDAV/CardDAV server with capabilities to generate birthday calendar from the address books" \
+    org.label-schema.name="Radicale Docker Image with Birthday Script" \
     org.label-schema.url="https://github.com/gaodes/radicale" \
     org.label-schema.vcs-url="https://github.com/tomsquest/docker-radicale"
 
