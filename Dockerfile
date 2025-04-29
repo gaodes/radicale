@@ -4,10 +4,10 @@ ARG COMMIT_ID
 ENV COMMIT_ID=${COMMIT_ID}
 
 ARG BUILD_UID
-ENV BUILD_UID=${BUILD_UID:-2999}
+ENV BUILD_UID=${BUILD_UID:-1000}
 
 ARG BUILD_GID
-ENV BUILD_GID=${BUILD_GID:-2999}
+ENV BUILD_GID=${BUILD_GID:-1000}
 
 LABEL maintainer="El Che <elche@elches.cloud>" \
       org.label-schema.name="Radicale Docker Image with birthday script" \
