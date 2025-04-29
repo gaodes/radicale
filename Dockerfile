@@ -10,13 +10,13 @@ ARG BUILD_GID
 ENV BUILD_GID=${BUILD_GID:-1000}
 
 LABEL maintainer="El Che <elche@elches.cloud>" \
-      org.label-schema.name="Radicale Docker Image with birthday script" \
-      org.label-schema.description="Enhanced Docker image for Radicale, the CalDAV/CardDAV server with capabilities to generate birthday calendar from the address books" \
-      org.label-schema.url="https://github.com/gaodes/radicale" \
-      org.label-schema.version=$VERSION \
-      org.label-schema.vcs-ref=$COMMIT_ID \
-      org.label-schema.vcs-url="https://github.com/tomsquest/docker-radicale" \
-      org.label-schema.schema-version="1.0"
+    org.label-schema.name="Radicale Docker Image with birthday script" \
+    org.label-schema.description="Enhanced Docker image for Radicale, the CalDAV/CardDAV server with capabilities to generate birthday calendar from the address books" \
+    org.label-schema.url="https://github.com/gaodes/radicale" \
+    org.label-schema.version=$VERSION \
+    org.label-schema.vcs-ref=$COMMIT_ID \
+    org.label-schema.vcs-url="https://github.com/tomsquest/docker-radicale" \
+    org.label-schema.schema-version="1.0"
 
 RUN apk add --no-cache \
         py3-dateutil \
