@@ -33,7 +33,12 @@
   "schedule": [
     "at any time"
   ],
+  "automerge": true,
   "automergeSchedule": [
     "at any time"
   ],
+  "ignoreTests": true,
+  "platformAutomerge": true,
+  "recreateWhen": "always",
+  "prCreation": "immediate"
 }
