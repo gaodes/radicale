@@ -14,7 +14,7 @@ jobs:
         id: webhook
         uses: distributhor/workflow-webhook@v3
         with:
-          webhook_url: https://komodo.homelab.rip/listener/github/build/radicale
+          webhook_url: ${{ secrets.DEPLOY_BUILD_WEBHOOKS_URL }}
           webhook_secret: ${{ secrets.KOMODO_ODIN_WEBHOOKS_SECRET }}
           # Make sure the webhook fails the workflow if it returns an error
           verbose: true
