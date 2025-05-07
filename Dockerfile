@@ -1,10 +1,10 @@
 FROM tomsquest/docker-radicale:3.5.2.0
 
 ARG BUILD_UID
-ENV BUILD_UID=${BUILD_UID:-1000}
+ENV BUILD_UID=${BUILD_UID:-99}
 
 ARG BUILD_GID
-ENV BUILD_GID=${BUILD_GID:-1000}
+ENV BUILD_GID=${BUILD_GID:-100}
 
 LABEL maintainer="El Che <elche@elches.cloud>" \
     org.label-schema.name="Radicale Docker Image with Birthday Script" \
