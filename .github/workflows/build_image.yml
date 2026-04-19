@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Run Build Webhook
         id: webhook
-        uses: distributhor/workflow-webhook@v3
+        uses: distributhor/workflow-webhook@v3.0.8
         with:
           webhook_url: ${{ secrets.DEPLOY_BUILD_WEBHOOKS_URL }}
           webhook_secret: ${{ secrets.KOMODO_ODIN_WEBHOOKS_SECRET }}
