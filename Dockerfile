@@ -1,4 +1,4 @@
-FROM tomsquest/docker-radicale:3.8.1.0
+FROM tomsquest/docker-radicale:3.8.1.1
 
 ARG BUILD_UID
 ENV BUILD_UID=${BUILD_UID:-99}
